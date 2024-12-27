@@ -716,8 +716,8 @@ function animate() {
     jupiter.obj.rotateY(0.002);
     saturn.obj.rotateY(0.0009);
     uranus.obj.rotateY(0.0004);
-    neptune.obj.rotateY(0.0001);
-    pluto.obj.rotateY(0.00007);
+    neptune.obj.rotateY(0.0005);
+    pluto.obj.rotateY(0.0004);
     renderer.render(scene, camera);
 }
 renderer.setAnimationLoop(animate);
