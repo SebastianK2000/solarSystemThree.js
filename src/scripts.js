@@ -106,7 +106,6 @@ const pointLight = new THREE.PointLight(0xFFFFFF, 2, 300);
 scene.add(pointLight);
 
 function animate() {
-    //Self-rotation
     sun.rotateY(0.004);
     mercury.mesh.rotateY(0.004);
     venus.mesh.rotateY(0.002);
@@ -118,16 +117,15 @@ function animate() {
     neptune.mesh.rotateY(0.032);
     pluto.mesh.rotateY(0.008);
 
-    //Around-sun-rotation
     mercury.obj.rotateY(0.04);
-    venus.obj.rotateY(0.015);
-    earth.obj.rotateY(0.01);
-    mars.obj.rotateY(0.008);
-    jupiter.obj.rotateY(0.002);
-    saturn.obj.rotateY(0.0009);
-    uranus.obj.rotateY(0.0004);
-    neptune.obj.rotateY(0.0005);
-    pluto.obj.rotateY(0.0004);
+    venus.obj.rotateY(0.04 * 0.73);
+    earth.obj.rotateY(0.04 * 0.62);
+    mars.obj.rotateY(0.04 * 0.50);
+    jupiter.obj.rotateY(0.04 * 0.27);
+    saturn.obj.rotateY(0.04 * 0.20);
+    uranus.obj.rotateY(0.04 * 0.14);
+    neptune.obj.rotateY(0.04 * 0.11);
+    pluto.obj.rotateY(0.04 * 0.099);
 
     renderer.render(scene, camera);
 }
